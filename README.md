@@ -65,7 +65,7 @@ Ready to fly?
 
 1. Launch the KBM tool.
 2. Select your map and aircraft, and then check the kneeboard categories your will need.
-3. (Optional) Set your callsign. You can of course also change it within DCS. I personally forget to change it before connecting to a server.
+3. (Optional) Set your callsign. You can of course also change it within DCS. I usually forget to change it before connecting to a server.
 4. Click `Launch` or `Apply Without Launch`
 
 KBM will copy your selections into your aircraft's DCS kneeboard folder. If there are existing pages in there, you will be notified.
