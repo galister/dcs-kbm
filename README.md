@@ -57,7 +57,7 @@ Right-click the background of `Common Kneeboards` to add a new category.
 
 Once done, your folders should look something like this.
 
-![Example Folder Structure](https://i.imgur.com/W0rjiAT.png)
+![Example Folder Structure](https://i.imgur.com/rKHQpms.png)
 
 ## 3. Apply selected pages before flight!
 
