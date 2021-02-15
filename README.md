@@ -1,7 +1,10 @@
 
 # DCS Kneeboard Manager
+Only take the pages you need.
 
-> Only take the pages you need.
+Download here: [[Releases]](https://github.com/galister/dcs-kbm/releases)
+
+
 
 ![Screenshot](https://i.imgur.com/yF6SYLe.png)
 
@@ -11,13 +14,16 @@ This can greatly cut down the number of kneeboards you will need to flick throug
 
 It can be used as a "launcher" for DCS, as well as just a simple tool to save your kneeboard selection whenever.
 
-## Quick Start
 
-Windows might warn you about untrusted software. Click _Details_ then _Run Anyway_ if that is the case.
+## 1. First run
+
+Windows might warn you about untrusted software. Click `Details` then `Run Anyway` if that is the case.
 
 After launching the program, select your DCS instance, a map and an aircraft.
 
-Let's add a new KB category for this selected map by right-clicking the background of _Map Kneeboards_.
+## 2. Set up your categories!
+
+Let's add a new KB category for this selected map by right-clicking the background of `Map Kneeboards`.
 
 ![Quick Start](https://i.imgur.com/6RwBvxm.png)
 
@@ -27,17 +33,46 @@ Once the category is created, right click it to open the folder.
 
 You can put the actual kneeboard page images for this category in there now.
 
-To add a new category to the selected aircraft, right-click the _Airframe Kneeboards_ list instead.
+You can also manually create these folders under `Saved Games/DCS.openbeta/KneeboardManager/`.
 
-_Common Kneeboards_ are categories that can be used across multiple maps and multiple airframes.
+#### Map kneeboard categories
 
-I tend to forget changing my callsign before missions, so I've also added the possibility to set your callsign right here.
+These are kneeboard categories that are specific to a single map / theatre.
 
-### Example Structure
+Right-click the background of `Map Kneeboards` to add a new category for your selected map.
+
+#### Airframe kneeboard categories
+
+Each aircraft has its own set of kneeboard categories.
+
+Right-click the background of `Airframe Kneeboards` to add a new category for your selected airframe.
+
+#### Common kneeboard categories
+
+These categories are shared across all maps and all airframes.
+
+Right-click the background of `Common Kneeboards` to add a new category.
+
+### Example structure
 
 Once done, your folders should look something like this.
 
 ![Example Folder Structure](https://i.imgur.com/W0rjiAT.png)
+
+## 3. Apply selected pages before flight!
+
+Ready to fly?
+
+1. Launch the KBM tool.
+2. Select your map and aircraft, and then check the kneeboard categories your will need.
+3. (Optional) Set your callsign. You can of course also change it within DCS. I personally forget to change it before connecting to a server.
+4. Click `Launch` or `Apply Without Launch`
+
+KBM will copy your selections into your aircraft's DCS kneeboard folder. If there are existing pages in there, you will be notified.
+
+After applying the selections, KBM will exit and DCS will launch (unless you chose `Apply Without Launch`).
+
+To launch again, simply run KBM again.
 
 ## Notes
 
