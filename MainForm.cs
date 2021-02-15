@@ -53,6 +53,37 @@ namespace KBM_88
             if (cbDcsInstance.SelectedIndex == -1 && cbDcsInstance.Items.Count > 0)
                 cbDcsInstance.SelectedIndex = 0;
         }
+        
+        private async void MainForm_Shown(object sender, EventArgs e)
+        {
+            try
+            {
+                var newVersion = await VersionChecker.CheckVersion();
+
+                if (newVersion != null && newVersion.ToString() != _settings.IgnoreVersion)
+                {
+                    var result = MessageBox.Show(
+                        $"Version {newVersion} is available.\n\nWould you like to download?\n\nCancel: Do not notify about {newVersion} again.", 
+                        "New Version Available",
+                        MessageBoxButtons.YesNoCancel
+                        );
+                    
+                    if (result == DialogResult.Yes)
+                    {
+                        Process.Start(new ProcessStartInfo(VersionChecker.ReleasesUrl)
+                        {
+                            UseShellExecute = true
+                        });
+                    }
+                    else if (result == DialogResult.Cancel)
+                    {
+                        _settings.IgnoreVersion = newVersion.ToString();
+                        _settings.Save();
+                    }
+                }
+            }
+            catch { /* ign */ }
+        }
 
         private void cbDcsInstance_SelectedIndexChanged(object sender, EventArgs e)
         {

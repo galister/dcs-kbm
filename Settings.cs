@@ -21,6 +21,8 @@ namespace KBM_88
         public List<string> CommonSelections { get; set; }
         public string Airframe { get; set; }
         public string Map { get; set; }
+        
+        public string IgnoreVersion { get; set; }
 
         public static Settings Load()
         {
