@@ -1,19 +1,19 @@
 
 # DCS Kneeboard Manager
-Only take the pages you need.
+
+KBM is a simple kneeboard manager for those wanting to keep their kneeboards clean. 
+
+The idea is that instead of having "AV8B" or "Hornet" or "F-16C" kneeboards, you can have subfolders for each aircraft and map.
+
+Before launching DCS, you can pick which subfolders (categories) you want to take with you, and the tool will place them in your real kneeboard folder that DCS will load from.
+
+This way you can cut down on the number of kneeboards you take and be able to find what you're looking for much quicker.
+
+KBM can be used as a "launcher" for DCS, or as a completely standalone tool.
 
 Download here: [[Releases]](https://github.com/galister/dcs-kbm/releases)
 
-
-
 ![Screenshot](https://i.imgur.com/yF6SYLe.png)
-
-Built for those who use a large number of kneeboard pages, this tool allows you to pick which kneeboard categories you will need, and install those in your DCS's Kneeboard folder for you.
-
-This can greatly cut down the number of kneeboards you will need to flick through.
-
-It can be used as a "launcher" for DCS, as well as just a simple tool to save your kneeboard selection whenever.
-
 
 ## 1. First run
 
