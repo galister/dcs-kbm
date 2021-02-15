@@ -21,6 +21,7 @@ namespace KBM_88
         private Settings _settings;
         public MainForm()
         {
+            Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath);
             AutoScaleMode = AutoScaleMode.None;
             Font = new Font(Font.Name, (float) Math.Round(9f * 100f / CreateGraphics().DpiX), Font.Style, Font.Unit, Font.GdiCharSet, Font.GdiVerticalFont);
             InitializeComponent();

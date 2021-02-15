@@ -34,6 +34,9 @@
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
+    <PropertyGroup>
+        <ApplicationIcon>app.ico</ApplicationIcon>
+    </PropertyGroup>
     <ItemGroup>
         <Reference Include="Microsoft.VisualBasic" />
         <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
@@ -92,6 +95,7 @@
     <ItemGroup>
       <Content Include=".gitignore" />
       <Content Include="app.manifest" />
+      <Content Include="app.ico" />
       <Content Include="LICENSE" />
       <Content Include="README.md" />
     </ItemGroup>
