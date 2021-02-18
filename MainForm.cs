@@ -530,9 +530,8 @@ namespace KBM_88
                 return;
             
             Directory.Move(selectedFolder.Thing, path);
-            
-            parent.Items.RemoveAt(parent.SelectedIndex);
-            lbAddItem(parent, new Named<string>(newDir, path));
+
+            LoadKneeboardManagerFolder();
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -548,7 +547,7 @@ namespace KBM_88
             if (result == DialogResult.Yes)
             {
                 Directory.Delete(selectedFolder.Thing, true);
-                parent.Items.RemoveAt(parent.SelectedIndex);
+                LoadKneeboardManagerFolder();
             }
             else if (result == DialogResult.No)
             {
@@ -560,26 +559,9 @@ namespace KBM_88
                         Path.GetDirectoryName(selectedFolder.Thing) ?? throw new InvalidOperationException(), 
                         newName)
                     );
-                parent.Items.RemoveAt(parent.SelectedIndex);
+                LoadKneeboardManagerFolder();
             }
             
-        }
-        
-        private void lbAddItem(CheckedListBox parent, Named<string> newItem)
-        {
-            var items = new List<(Named<string>, bool)>(parent.Items.Count + 1)
-            {
-                (newItem, false)
-            };
-            for (var i = 0; i < parent.Items.Count; i++)
-                items.Add((parent.Items[i] as Named<string>, parent.GetItemChecked(i)));
-            
-            parent.Items.Clear();
-            foreach (var (item, check) in items.OrderBy(x => x.Item1.Name))
-            {
-                parent.Items.Add(item);
-                parent.SetItemChecked(parent.Items.Count-1, check);
-            }
         }
 
         private string validateNewDirPath(string baseDir, string newDir)
@@ -627,7 +609,7 @@ namespace KBM_88
                 return;
             
             Directory.CreateDirectory(path);
-            lbAddItem(parent, new Named<string>(newDir, path));
+            LoadKneeboardManagerFolder();
         }
     }
 }
