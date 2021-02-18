@@ -39,11 +39,15 @@ You can also manually create these folders under `Saved Games/DCS.openbeta/Kneeb
 
 These are kneeboard categories that are specific to a single map / theatre.
 
+If your map doesn't appear in the selection box, add its folder under `Saved Games/DCS.openbeta/KneeboardManager/Maps`. Naming for these don't matter from a technical perspective, so feel free to name your `Persian Gulf` folder as just `PG`, for example.
+
 Right-click the background of `Map Kneeboards` to add a new category for your selected map.
 
 #### Airframe kneeboard categories
 
 Each aircraft has its own set of kneeboard categories.
+
+If your aircraft doesn't appear in the selection box, add its folder under `Saved Games/DCS.openbeta/KneeboardManager/Aircraft`. The folder must be the same name as it would show inside the `Saved Games/DCS.openbeta/Kneeboard` folder.
 
 Right-click the background of `Airframe Kneeboards` to add a new category for your selected airframe.
 
